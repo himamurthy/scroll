@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+ <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	<!--at: http://jqueryui.com/download -->
+	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="js/jquery.kinetic.js" type="text/javascript"></script>
+	<!-- Smooth Div Scroll 1.3 minified-->
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+	<!-- js/jquery.smoothDivScroll-1.3.js -->
+	<!-- Plugin initialization -->
+	<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		$(document).ready(function () {
+			// None of the options are set
+			$("div#makeMeScrollable").smoothDivScroll({
+				autoScrollingMode: "onStart"
+			});
+		});
+	</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(1000);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#first').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.4);
+
+	$('#third').parallax("50%", 0.3);	$('#fourth').parallax("50%", 0.5);$('#fifth').parallax("50%", 0.6);$('#sixth').parallax("50%", 0.7);
+
+var height = $(window).height();
+var width = $(window).width();
+$(function() {
+    $(window).resize(function() {
+        $(".mainDiv").height(height);
+        $(".mainDiv").width(width);
+        $("#sidebar").height(height);
+    var height = $(window).height();
+    var width = $(window).width();
+    });
+});
+</script>
+
+<!-- Scroll up and down detection/movement -->
+<script type="text/javascript">
+    $(window).bind('mousewheel', function(event) {
+        if (event.originalEvent.wheelDelta >= 0) {
+            $(window).scrollTo('0%', 1000);
+        }
+        else {
+            $(window).scrollTo('100%', 1000);
+        }
+        event.preventDefault()
+    });
+})
+</script>
+</head>
+
+<body>
+	<ul id="nav">
+	</ul>
+	<div class="mainDiv">
+	<div id="first">
+		<div class="story">
+	    	<div id="main_register">
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<h2>My First Journey with CompIndia Infotech Pvt Ltd </h2>
+			<br/>
+        <p>I had a really nice time . Felt as if i was in Home basically .
+		For 5 Years i was out of home in Hostel Where i had  good pear group
+		from Sr. to Jr from Office Staff to Managment i can connect easily. Where i relised i can move 
+		with the crowed .</p>
+		<p>
+		Later When after completing my Under Graduation i had so many ideas to process,
+		but know Web was my world the Life In Compindia was really Wonderful .
+		I dont know how was i before but yes i gained some  knowladge after coming here one thing
+		i feel is i am in very safer zone . Where i feel as my Home thank you All for that Hospitality.
+		I could really understand how important is to share the Knowladge with the people.
+		Here i really loved the way where, we as a fresher never shown down amongs the experience guys!
+		The way focks Helped me when i was in project or with my Doubts was Really Great.
+
+		 </p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+	</div>
+
+    <div class="mainDiv">
+	<div id="second">
+		<div class="story">
+		
+	    	<div class="float-right">
+	            <h2> My Way</h2>
+	            <p>I want to be the Best User Interface Web Developer for next upcoming years and like to be Technical Evangelist .I found myself to be Extravert, I enjoy engaging with communities, which are grown through Meetup’s and Webinars. I am passionate about design or Building products .I have a zeal for my research on technology which exhilarated about the new things and write papers. 
+	                </p>
+				<p>I want to be Leader after 10 years but before that i want to meet lot of people and know the people .
+				</p>
+	            
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#second-->
+	</div>
+	
+	<div class="mainDiv">
+	<div id="third">
+		<div class="story">
+	    	<div class="Subject">
+            Our Family 
+            </div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+	<div id="makeMeScrollable">
+		
+		
+		<img src="images/c2.jpg" alt="compindia " id="img1" />
+		
+		<img src="images/c3.jpg" alt="compindia " id="img2" />
+		<img src="images/c20.jpg" alt="compindia " id="img19" />
+		<img src="images/c4.jpg" alt="compindia " id="img3" />
+		<img src="images/c5.jpg" alt="compindia " id="img4" />
+		
+		<img src="images/c6.jpg" alt="compindia " id="img5" />
+		<img src="images/c18.jpg" alt="compindia " id="img17" />
+		<img src="images/c7.jpg" alt="compindia " id="img6" />
+		<img src="images/c8.jpg" alt="compindia " id="img7" />
+		<img src="images/c9.jpg" alt="compindia " id="img8" />
+		<img src="images/c19.jpg" alt="compindia " id="img18" />
+		<img src="images/c10.jpg" alt="compindia " id="img9" />
+		<img src="images/c11.jpg" alt="compindia " id="img10" />
+		<img src="images/c12.jpg" alt="compindia " id="img11" />
+		<img src="images/c13.jpg" alt="compindia " id="img12" />
+		<img src="images/c14.jpg" alt="compindia " id="img13" />
+		<img src="images/c15.jpg" alt="compindia " id="img14" />
+		<img src="images/c16.jpg" alt="compindia " id="img15" />
+		<img src="images/c17.jpg" alt="compindia " id="img16" />
+		
+		
+	</div>
+     </br>
+	 <div id="dreams">Fun and Sweet time out <br/>
+	 <p>I know the Importance of this job i know i am in very safer zone you all are 200% super guys  . I want to see out side World and deal with the problems.But i really love you all thank you all for your Support     :)</p></div>
+	    </div> <!--.sttory-->
+	</div> <!--#fourth-->
+	</div>
+	
+	<div class="mainDiv">
+    <div id="fourth">
+		<div class="story">
+	    	<div class="float-right">
+	        	<h2> Every Day with New Spirit </h2>
+	            <p>With New ideas and Doubts in Life i start my day.
+				There is no any day where i dont have doubts. Well i am into lot of thining process of doing
+				and a complicated system and feel as need to be tuned so that will later give lot of out put to the 
+				socity in the useful way.</p>
+				<p>I dont feel bad about it because problem with me is i think many ,but it is not in sequence.  But still like it because every one wil not get Doubts like this.</p>
+				<p>I really dont care of others when they make fun of me</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#fourth-->
+	</div>
+
+     <div class="mainDiv">
+	 <div id="fifth">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h2>Focks can connect me</h2>
+	            <p>If you want me to connect you can send me your  info through this form :)</p>
+				<div onload="init()">
+  <div class="main" id="main_register">
+    <form name="form"  method="post" onsubmit="return mval()"; action="mailto:jhimamurthy@gmail.com";>
+     <fieldset>
+	<legend>Registration</legend>
+	<div class="clr"></div>
+	<label>First Name</label>
+	  <input type="text" name="fname" id="fname" class="inp" onfocus="fcs('fname')"
+             onblur="dcs('fname')"/>
+	<div class="clr"></div>
+	<label>Last Name</label>
+	  <input type="text" name="lname" id="lname" class="inp" onfocus="fcs('lname')"
+            onblur="dcs('lname')" />
+	<div class="clr"></div>
+	<label>Email</label>
+	  <input type="text" name="email" id="email" class="inp" onfocus="fcs('email')"
+            onblur="dcs('email')" />
+	<div class="clr"></div>
+	<label>PhoneNo</label>
+			<input type="phoneno" name="phon" id="phon" class="inp"  onfocus="fcs('phon')" />
+	<div class="clr"></div>
+	
+
+	<div class="clr"></div><div class="clr"></div>
+	<div style="width:300px; margin: auto;">
+	  <input type="submit" name="submit" value="Submit" class="inp_s"/>
+	  <input type="reset" name="reset" value="Clear" class="inp_c" onclick="clrall()" />
+	</div>
+      </fieldset>
+</form>
+</div>
+</div>
+
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#fourth-->
+	</div>
+ 
+    <div class="mainDiv">
+	<div id="sixth">
+		<div class="story">
+ 
+	         <br/>
+			 <br/>
+			 <br/>
+			 <br/>
+			 <br/>
+			 <br/>
+			 <br/>
+			<br/>
+			<br/>
+			<br/>
+			
+			 <br>
+	         <h2 style="font-style=bold">Connect Me</h2>
+	         <p>This Site is Made by Hima Javvadi</p>
+			 <li><strong>Connect me @Aboutme </strong>:<a href="http://about.me/himajavvadi" title="Follow @aboutme">aboutme @himajavvadi</a></li>	       	
+			 <li><strong>Connect me @FaceBook </strong>:<a href="https://www.facebook.com/hima.javvadhi" title="Follow @ FaceBook"> FaceBook @Hima Javvadi </a></li>
+			 <li><strong>Connect me @Twitter </strong>:<a href="https://twitter.com/jhimamurthy" title="Follow @ Twitter ">Twitter @jhimamurthy<a></li>
+	        </ul>
+	     
+	        </ul>
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+	</div>
+</body>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</html>
